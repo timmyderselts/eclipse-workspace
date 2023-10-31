@@ -1,0 +1,189 @@
+`Oct 31, 2023 7:55:35 AM peergos.server.storage.IpfsWrapper launch
+INFO: Using IPFS dir C:\Users\Administrator.peergos.ipfs
+Oct 31, 2023 7:55:35 AM peergos.server.storage.IpfsWrapper
+INFO: Creating new identity
+Oct 31, 2023 7:55:35 AM peergos.server.storage.IpfsWrapper configure
+INFO: Initializing ipfs
+Oct 31, 2023 7:55:35 AM peergos.server.storage.IpfsWrapper launch
+INFO: Starting Nabu version: 0.6.0, peerid: 12D3KooWLW3pNxK2CwBaukpqtkPZawM9dmHT2ouhcx9CwXT3Gwyn
+Oct 31, 2023 7:55:36 AM org.peergos.blockstore.FileBlockstore
+INFO: Using FileBlockStore at location: C:\Users\Administrator.peergos.ipfs\blocks
+Oct 31, 2023 7:55:36 AM org.peergos.EmbeddedIpfs start
+INFO: Starting IPFS...
+Oct 31, 2023 7:55:36 AM org.peergos.EmbeddedIpfs start
+INFO: Node started and listening on [/ip6/::/tcp/4001/p2p/12D3KooWLW3pNxK2CwBaukpqtkPZawM9dmHT2ouhcx9CwXT3Gwyn]
+Oct 31, 2023 7:55:36 AM org.peergos.EmbeddedIpfs start
+INFO: Bootstrapping IPFS routing table
+Oct 31, 2023 7:55:36 AM org.peergos.EmbeddedIpfs start
+INFO: Bootstrapping IPFS kademlia
+Oct 31, 2023 7:55:36 AM org.peergos.protocol.dht.Kademlia bootstrap
+INFO: Bootstrap connected to 0 nodes close to us.
+Oct 31, 2023 7:55:36 AM org.peergos.protocol.dht.Kademlia bootstrap
+INFO: Bootstrap connected to 0 nodes close to us.
+Oct 31, 2023 7:55:36 AM peergos.server.storage.IpfsWrapper launch
+INFO: Starting Nabu API server at 127.0.0.1:5001
+Oct 31, 2023 7:55:37 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled id query in: 47 mS
+Oct 31, 2023 7:55:37 AM peergos.shared.mutable.HttpMutablePointers
+INFO: Creating proxying Http Mutable Pointers API at http://127.0.0.1:8080
+Oct 31, 2023 7:55:37 AM peergos.shared.storage.HttpSpaceUsage
+INFO: Creating HTTP SpaceUsage API at http://127.0.0.1:8080 and http://127.0.0.1:8080
+Oct 31, 2023 7:55:37 AM peergos.shared.corenode.HTTPCoreNode
+INFO: Creating HTTP Corenode API at http://127.0.0.1:8080
+Oct 31, 2023 7:55:37 AM peergos.server.corenode.MirrorCoreNode load
+INFO: Reading state from C:\Users\Administrator.peergos\pki-state.cbor which exists ? false
+Oct 31, 2023 7:55:37 AM org.peergos.util.HttpUtil replyError
+WARNING: Target not found: QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+org.peergos.net.ConnectionException: Target not found: QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+at org.peergos.EmbeddedIpfs.getAddresses(EmbeddedIpfs.java:233)
+at org.peergos.HttpProxyService.proxyRequest(HttpProxyService.java:38)
+at org.peergos.net.HttpProxyHandler.handleCallToAPI(HttpProxyHandler.java:59)
+at org.peergos.net.Handler.handle(Handler.java:30)
+at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:98)
+at jdk.httpserver/sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:82)
+at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:101)
+at jdk.httpserver/sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:871)
+at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:98)
+at jdk.httpserver/sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:847)
+at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1423)
+at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+Oct 31, 2023 7:55:37 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 14 mS
+Oct 31, 2023 7:55:37 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 25mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Oct 31, 2023 7:55:37 AM peergos.server.corenode.MirrorCoreNode initialize
+SEVERE: Couldn't update mirror pki state: java.lang.RuntimeException: Target+not+found%3A+QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+java.lang.RuntimeException: java.lang.RuntimeException: Target+not+found%3A+QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+at peergos.server.corenode.MirrorCoreNode.update(MirrorCoreNode.java:299)
+at peergos.server.corenode.MirrorCoreNode.initialize(MirrorCoreNode.java:98)
+at peergos.server.Main.startPeergos(Main.java:581)
+at peergos.server.Command.main(Command.java:75)
+at peergos.server.Command.main(Command.java:63)
+at peergos.server.Main.main(Main.java:913)
+Caused by: java.util.concurrent.CompletionException: java.lang.RuntimeException: Target+not+found%3A+QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:674)
+at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
+at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
+at peergos.shared.mutable.HttpMutablePointers.getPointer(HttpMutablePointers.java:99)
+at peergos.shared.mutable.HttpMutablePointers.getPointer(HttpMutablePointers.java:92)
+at peergos.server.corenode.MirrorCoreNode.update(MirrorCoreNode.java:247)
+... 5 more
+Caused by: java.lang.RuntimeException: Target+not+found%3A+QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+at peergos.server.util.JavaPoster.handleError(JavaPoster.java:107)
+at peergos.server.util.JavaPoster.post(JavaPoster.java:83)
+at peergos.server.util.JavaPoster.post(JavaPoster.java:50)
+at peergos.server.util.JavaPoster.postUnzip(JavaPoster.java:45)
+at peergos.shared.user.HttpPoster.postUnzip(HttpPoster.java:17)
+at peergos.server.util.JavaPoster.get(JavaPoster.java:185)
+at peergos.server.util.JavaPoster.get(JavaPoster.java:174)
+at peergos.shared.mutable.HttpMutablePointers.getPointer(HttpMutablePointers.java:98)
+... 7 more
+
+Oct 31, 2023 7:55:37 AM peergos.server.Builder buildSpaceQuotas
+INFO: Using default user space quota of 1073741824
+Oct 31, 2023 7:55:37 AM peergos.server.space.SpaceCheckingKeyFilter update
+INFO: Checking for updated usage for users...
+Oct 31, 2023 7:55:37 AM peergos.server.space.SpaceCheckingKeyFilter update
+INFO: Checking for updated mutable pointers...
+Oct 31, 2023 7:55:37 AM peergos.server.space.SpaceCheckingKeyFilter update
+INFO: 2023-10-31T07:55:37.865184800 Finished updating space usage for all usernames in 0 s
+Oct 31, 2023 7:55:37 AM peergos.shared.social.HttpSocialNetwork
+INFO: Creating HTTP SocialNetwork API at http://127.0.0.1:8080 and http://127.0.0.1:8080
+Oct 31, 2023 7:55:37 AM peergos.server.UserService initAndStart
+INFO: Starting local Peergos server at: localhost:8000
+Oct 31, 2023 7:55:37 AM peergos.server.UserService initAndStart
+INFO: Using webroot from jar
+Oct 31, 2023 7:55:37 AM peergos.server.UserService initAndStart
+INFO: Caching web-resources
+Oct 31, 2023 7:55:37 AM peergos.server.UserService initAndStart
+INFO: Starting local Peergos server at: localhost:8003
+Oct 31, 2023 7:55:37 AM peergos.server.UserService initAndStart
+INFO: Using webroot from jar
+Oct 31, 2023 7:55:37 AM peergos.server.UserService initAndStart
+INFO: Caching web-resources
+Oct 31, 2023 7:55:37 AM peergos.server.space.SpaceCheckingKeyFilter calculateUsage
+INFO: Calculating space usage for 0 local users...
+Oct 31, 2023 7:55:37 AM peergos.server.space.SpaceCheckingKeyFilter calculateUsage
+INFO: Finished calculating space usage for 0 local users...
+Oct 31, 2023 7:56:13 AM peergos.server.net.CoreNodeHandler handle
+INFO: Corenode server handled getUsernamesGzip request in: 14 mS
+Oct 31, 2023 7:56:13 AM peergos.server.net.DHTHandler handle
+INFO: DHT Handler handled blockstore/props query in: 6 mS
+Oct 31, 2023 7:56:13 AM peergos.server.net.DHTHandler handle
+INFO: DHT Handler handled id query in: 1 mS
+Oct 31, 2023 7:56:13 AM peergos.server.net.DHTHandler handle
+INFO: DHT Handler handled blockstore/props query in: 0 mS
+Oct 31, 2023 7:56:26 AM org.peergos.util.HttpUtil replyError
+WARNING: Target not found: QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+org.peergos.net.ConnectionException: Target not found: QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+at org.peergos.EmbeddedIpfs.getAddresses(EmbeddedIpfs.java:233)
+at org.peergos.HttpProxyService.proxyRequest(HttpProxyService.java:38)
+at org.peergos.net.HttpProxyHandler.handleCallToAPI(HttpProxyHandler.java:59)
+at org.peergos.net.Handler.handle(Handler.java:30)
+at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:98)
+at jdk.httpserver/sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:82)
+at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:101)
+at jdk.httpserver/sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:871)
+at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:98)
+at jdk.httpserver/sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:847)
+at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1423)
+at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+Oct 31, 2023 7:56:26 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 3 mS
+Oct 31, 2023 7:56:26 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 8mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Oct 31, 2023 7:56:26 AM peergos.server.util.HttpUtil replyError
+WARNING: java.lang.RuntimeException: Target+not+found%3A+QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+java.lang.RuntimeException: java.lang.RuntimeException: Target+not+found%3A+QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+at peergos.server.corenode.MirrorCoreNode.update(MirrorCoreNode.java:299)
+at peergos.server.corenode.MirrorCoreNode.getChain(MirrorCoreNode.java:360)
+at peergos.server.corenode.SignUpFilter.getChain(SignUpFilter.java:138)
+at peergos.server.corenode.CorenodeEventPropagator.getChain(CorenodeEventPropagator.java:100)
+at peergos.server.net.CoreNodeHandler.getChain(CoreNodeHandler.java:119)
+at peergos.server.net.CoreNodeHandler.handle(CoreNodeHandler.java:60)
+at peergos.server.net.SubdomainHandler.handle(SubdomainHandler.java:54)
+at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:98)
+at jdk.httpserver/sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:82)
+at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:101)
+at jdk.httpserver/sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:871)
+at jdk.httpserver/com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:98)
+at jdk.httpserver/sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:847)
+at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1423)
+at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.util.concurrent.CompletionException: java.lang.RuntimeException: Target+not+found%3A+QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+at java.base/java.util.concurrent.CompletableFuture.uniApplyNow(CompletableFuture.java:674)
+at java.base/java.util.concurrent.CompletableFuture.uniApplyStage(CompletableFuture.java:662)
+at java.base/java.util.concurrent.CompletableFuture.thenApply(CompletableFuture.java:2200)
+at peergos.shared.mutable.HttpMutablePointers.getPointer(HttpMutablePointers.java:99)
+at peergos.shared.mutable.HttpMutablePointers.getPointer(HttpMutablePointers.java:92)
+at peergos.server.corenode.MirrorCoreNode.update(MirrorCoreNode.java:247)
+... 18 more
+Caused by: java.lang.RuntimeException: Target+not+found%3A+QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF
+at peergos.server.util.JavaPoster.handleError(JavaPoster.java:107)
+at peergos.server.util.JavaPoster.post(JavaPoster.java:83)
+at peergos.server.util.JavaPoster.post(JavaPoster.java:50)
+at peergos.server.util.JavaPoster.postUnzip(JavaPoster.java:45)
+at peergos.shared.user.HttpPoster.postUnzip(HttpPoster.java:17)
+at peergos.server.util.JavaPoster.get(JavaPoster.java:185)
+at peergos.server.util.JavaPoster.get(JavaPoster.java:174)
+at peergos.shared.mutable.HttpMutablePointers.getPointer(HttpMutablePointers.java:98)
+... 20 more
+
+Oct 31, 2023 7:56:26 AM peergos.server.net.CoreNodeHandler handle
+INFO: Corenode server handled getChain request in: 31 mS
