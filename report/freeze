@@ -1,0 +1,71 @@
+C:\peergos>java -jar Peergos.jar daemon -generate-token true
+Starting Peergos daemon version: 0.13.0-web-ui/5efe1d8ab6cb64fe8b93177b4a6d6929c
+c31e60d
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or
+earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/peergos/Peergos.jar!/org/slf4j/im
+pl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+java.util.concurrent.CompletionException: io.libp2p.core.ConnectionClosedExcepti
+on: Channel closed [id: 0x15acf579/7/true, L:Mux[/192.168.1.130:60294-15acf579/7
+/true] ! R:Mux[/83.190.73.5:22976-15acf579/7/true]]
+at java.base/java.util.concurrent.CompletableFuture.encodeRelay(Completa
+bleFuture.java:368)
+at java.base/java.util.concurrent.CompletableFuture.completeRelay(Comple
+tableFuture.java:377)
+at java.base/java.util.concurrent.CompletableFuture$UniRelay.tryFire(Com
+pletableFuture.java:1097)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(Complet
+ableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionall
+y(CompletableFuture.java:2194)
+at io.libp2p.etc.types.AsyncExtKt.bind$lambda-0(AsyncExt.kt:13)
+at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(Comp
+letableFuture.java:863)
+at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryF
+ire(CompletableFuture.java:841)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(Complet
+ableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionall
+y(CompletableFuture.java:2194)
+at io.libp2p.multistream.ProtocolSelect.channelUnregistered(ProtocolSele
+ct.kt:70)
+at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregiste
+red(AbstractChannelHandlerContext.java:219)
+at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregiste
+red(AbstractChannelHandlerContext.java:195)
+at io.netty.channel.AbstractChannelHandlerContext.fireChannelUnregistere
+d(AbstractChannelHandlerContext.java:188)
+at io.netty.channel.DefaultChannelPipeline$HeadContext.channelUnregister
+ed(DefaultChannelPipeline.java:1388)
+at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregiste
+red(AbstractChannelHandlerContext.java:215)
+at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregiste
+red(AbstractChannelHandlerContext.java:195)
+at io.netty.channel.DefaultChannelPipeline.fireChannelUnregistered(Defau
+ltChannelPipeline.java:821)
+at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel
+.java:821)
+at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventE
+xecutor.java:174)
+at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEv
+entExecutor.java:167)
+at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(Single
+ThreadEventExecutor.java:470)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:566)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThread
+EventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java
+:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalR
+unnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.libp2p.core.ConnectionClosedException: Channel closed [id: 0x15acf
+579/7/true, L:Mux[/192.168.1.130:60294-15acf579/7/true] ! R:Mux[/83.190.73.5:229
+76-15acf579/7/true]]
+at io.libp2p.multistream.ProtocolSelect.channelUnregistered(ProtocolSele
+ct.kt:69)
+... 16 more
