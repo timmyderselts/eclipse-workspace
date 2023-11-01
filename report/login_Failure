@@ -1,0 +1,274 @@
+
+D:\peergos>java -jar Peergos.jar daemon -generate-token true
+Starting Peergos daemon version: 0.13.0-web-ui/5efe1d8ab6cb64fe8b93177b4a6d6929c
+c31e60d
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or
+earlier.
+SLF4J: Ignoring binding found at [jar:file:/D:/peergos/Peergos.jar!/org/slf4j/im
+pl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Updating pki to new tree root zdpuB2Ayyxiv5cS1piPFoFhVbBkx9Za35wSJcnaULBFqpZdSQ
+
+█╗█╗█╗█╗   ██████╗ ███████╗███████╗██████╗  ██████╗  ██████╗ ███████╗   █╗█╗█╗█╗
+
+ █████╔╝   ██╔══██╗██╔════╝██╔════╝██╔══██╗██╔════╝ ██╔═══██╗██╔════╝    █████╔╝
+
+ ██ ██║    ██████╔╝█████╗  █████╗  ██████╔╝██║  ███╗██║   ██║███████╗    ██ ██║
+ █████║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔══██╗██║   ██║██║   ██║╚════██║    █████║
+███████╗   ██║     ███████╗███████╗██║  ██║╚██████╔╝╚██████╔╝███████║   ███████╗
+
+╚══════╝   ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝   ╚══════╝
+
+Generating signup token...
+Peergos daemon started. Browse to http://localhost:8000/?signup=true&token=b9e49
+4295dee3c14d55c805fb484be0671cd6d4fb89dcd43792336ffbc40b34e to sign up.
+Running version 0.13.0-web-ui/5efe1d8ab6cb64fe8b93177b4a6d6929cc31e60d
+java.util.concurrent.CompletionException: io.libp2p.core.ConnectionClosedExcepti
+on: Channel closed [id: 0x117c636b/9/true, L:Mux[/192.168.1.130:54386-117c636b/9
+/true] ! R:Mux[/45.32.63.236:4001-117c636b/9/true]]
+        at java.base/java.util.concurrent.CompletableFuture.encodeRelay(Completa
+bleFuture.java:368)
+        at java.base/java.util.concurrent.CompletableFuture.completeRelay(Comple
+tableFuture.java:377)
+        at java.base/java.util.concurrent.CompletableFuture$UniRelay.tryFire(Com
+pletableFuture.java:1097)
+        at java.base/java.util.concurrent.CompletableFuture.postComplete(Complet
+ableFuture.java:510)
+        at java.base/java.util.concurrent.CompletableFuture.completeExceptionall
+y(CompletableFuture.java:2194)
+        at io.libp2p.etc.types.AsyncExtKt.bind$lambda-0(AsyncExt.kt:13)
+        at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(Comp
+letableFuture.java:863)
+        at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryF
+ire(CompletableFuture.java:841)
+        at java.base/java.util.concurrent.CompletableFuture.postComplete(Complet
+ableFuture.java:510)
+        at java.base/java.util.concurrent.CompletableFuture.completeExceptionall
+y(CompletableFuture.java:2194)
+        at io.libp2p.multistream.ProtocolSelect.channelUnregistered(ProtocolSele
+ct.kt:70)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregiste
+red(AbstractChannelHandlerContext.java:219)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregiste
+red(AbstractChannelHandlerContext.java:195)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelUnregistere
+d(AbstractChannelHandlerContext.java:188)
+        at io.netty.channel.DefaultChannelPipeline$HeadContext.channelUnregister
+ed(DefaultChannelPipeline.java:1388)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregiste
+red(AbstractChannelHandlerContext.java:215)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregiste
+red(AbstractChannelHandlerContext.java:195)
+        at io.netty.channel.DefaultChannelPipeline.fireChannelUnregistered(Defau
+ltChannelPipeline.java:821)
+        at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel
+.java:821)
+        at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventE
+xecutor.java:174)
+        at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEv
+entExecutor.java:167)
+        at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(Single
+ThreadEventExecutor.java:470)
+        at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:566)
+        at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThread
+EventExecutor.java:997)
+        at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java
+:74)
+        at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalR
+unnable.java:30)
+        at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.libp2p.core.ConnectionClosedException: Channel closed [id: 0x117c6
+36b/9/true, L:Mux[/192.168.1.130:54386-117c636b/9/true] ! R:Mux[/45.32.63.236:40
+01-117c636b/9/true]]
+        at io.libp2p.multistream.ProtocolSelect.channelUnregistered(ProtocolSele
+ct.kt:69)
+        ... 16 more
+Nov 01, 2023 6:22:35 AM io.netty.channel.ChannelInitializer exceptionCaught
+WARNING: Failed to initialize a channel. Closing: [id: 0xb8631e8a/10/false, L:Mu
+x[/192.168.1.130:54751-b8631e8a/10/false] ! R:Mux[/185.130.44.194:4001-b8631e8a/
+10/false]]
+java.lang.IllegalStateException: Blocked peer 12D3KooWMkmfXu7qDNV1cQCKUU8tQnkXFZ
+uvtyDfpaQ8GQiJTXqe
+        at org.peergos.protocol.bitswap.BitswapProtocol.onStartResponder(Bitswap
+Protocol.java:50)
+        at io.libp2p.protocol.ProtocolHandler.initChannel(ProtocolHandler.kt:29)
+
+        at io.libp2p.core.multistream.StrictProtocolBinding.initChannel(StrictPr
+otocolBinding.kt:15)
+        at io.libp2p.multistream.ProtocolSelect$userEventTriggered$1.invoke(Prot
+ocolSelect.kt:53)
+        at io.libp2p.multistream.ProtocolSelect$userEventTriggered$1.invoke(Prot
+ocolSelect.kt:52)
+        at io.libp2p.etc.util.netty.NettyUtilKt$nettyInitializer$1.initChannel(N
+ettyUtil.kt:21)
+        at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.ja
+va:129)
+        at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.j
+ava:112)
+        at io.netty.channel.AbstractChannelHandlerContext.callHandlerAdded(Abstr
+actChannelHandlerContext.java:1114)
+        at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChan
+nelPipeline.java:609)
+        at io.netty.channel.DefaultChannelPipeline.addAfter(DefaultChannelPipeli
+ne.java:322)
+        at io.netty.channel.DefaultChannelPipeline.addAfter(DefaultChannelPipeli
+ne.java:290)
+        at io.libp2p.etc.types.NettyExtKt.addAfter(NettyExt.kt:36)
+        at io.libp2p.multistream.ProtocolSelect.userEventTriggered(ProtocolSelec
+t.kt:50)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTrigger
+ed(AbstractChannelHandlerContext.java:400)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTrigger
+ed(AbstractChannelHandlerContext.java:376)
+        at io.netty.channel.AbstractChannelHandlerContext.fireUserEventTriggered
+(AbstractChannelHandlerContext.java:368)
+        at io.libp2p.multistream.Negotiator$GenericHandler.channelRead0(Negotiat
+or.kt:102)
+        at io.libp2p.multistream.Negotiator$GenericHandler.channelRead0(Negotiat
+or.kt:75)
+        at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChanne
+lInboundHandler.java:99)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(Abstra
+ctChannelHandlerContext.java:412)
+        at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToM
+essageDecoder.java:103)
+        at io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMes
+sageCodec.java:111)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(Abstra
+ctChannelHandlerContext.java:412)
+        at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToM
+essageDecoder.java:103)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(Abstra
+ctChannelHandlerContext.java:412)
+        at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMes
+sageDecoder.java:346)
+        at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMes
+sageDecoder.java:333)
+        at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageD
+ecoder.java:454)
+        at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessage
+Decoder.java:290)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(Abstra
+ctChannelHandlerContext.java:412)
+        at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(Defau
+ltChannelPipeline.java:1410)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:440)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:420)
+        at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChanne
+lPipeline.java:919)
+        at io.libp2p.etc.util.netty.mux.AbstractMuxHandler.childRead(AbstractMux
+Handler.kt:70)
+        at io.libp2p.mux.yamux.YamuxHandler.handleDataRead(YamuxHandler.kt:111)
+        at io.libp2p.mux.yamux.YamuxHandler.channelRead(YamuxHandler.kt:64)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:444)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(Abstra
+ctChannelHandlerContext.java:412)
+        at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMes
+sageDecoder.java:346)
+        at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessage
+Decoder.java:318)
+        at io.netty.handler.codec.ByteToMessageCodec.channelRead(ByteToMessageCo
+dec.java:103)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(Abstra
+ctChannelHandlerContext.java:412)
+        at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToM
+essageDecoder.java:103)
+        at io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMes
+sageCodec.java:111)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(Abstra
+ctChannelHandlerContext.java:412)
+        at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandle
+rContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+        at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMes
+sageDecoder.java:346)
+        at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessage
+Decoder.java:318)
+        at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedCha
+nnelDuplexHandler.java:251)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:442)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:420)
+        at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(Abstra
+ctChannelHandlerContext.java:412)
+        at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(Defau
+ltChannelPipeline.java:1410)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:440)
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abst
+ractChannelHandlerContext.java:420)
+        at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChanne
+lPipeline.java:919)
+        at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(Abstra
+ctNioByteChannel.java:166)
+        at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.jav
+a:788)
+        at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEve
+ntLoop.java:724)
+        at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.ja
+va:650)
+        at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+        at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThread
+EventExecutor.java:997)
+        at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java
+:74)
+        at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalR
+unnable.java:30)
+        at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Trailer:Optional[Target+not+found%3A+12D3KooWMzVWKCVm6Z9unYV78GW9u4aWGa8z9t3Bj7J
+LeDL8kQvq]
+Trailer:Optional[Target+not+found%3A+12D3KooWMzVWKCVm6Z9unYV78GW9u4aWGa8z9t3Bj7J
+LeDL8kQvq]
+Trailer:Optional[Target+not+found%3A+12D3KooWMzVWKCVm6Z9unYV78GW9u4aWGa8z9t3Bj7J
+LeDL8kQvq]
+java.lang.IllegalArgumentException: Value (12D3KooWEpM9HYFLR6oNhm741KGQQu8i1jGwQ
+xnHhvHtNbGg4LMF) for P2P doesn't match existing value in /ip4/149.28.115.3/udp/4
+001/quic-v1/p2p/12D3KooWF1fnnfbCETR6SeQ68YdSaaBSdxFWQtUkjvVpuapB7wsh/p2p-circuit
+
+        at io.libp2p.core.multiformats.Multiaddr.withComponentImpl(Multiaddr.kt:
+68)
+        at io.libp2p.core.multiformats.Multiaddr.withComponent(Multiaddr.kt:78)
+        at io.libp2p.core.multiformats.Multiaddr.withP2P(Multiaddr.kt:57)
+        at io.libp2p.network.NetworkImpl.connect(NetworkImpl.kt:72)
+        at io.libp2p.core.Network.connect(Network.kt:75)
+        at io.libp2p.host.HostImpl.newStream(HostImpl.kt:94)
+        at io.libp2p.core.multistream.ProtocolBinding.dial(ProtocolBinding.kt:37
+)
+        at org.peergos.protocol.dht.Kademlia.connectTo(Kademlia.java:89)
+        at org.peergos.protocol.dht.Kademlia.bootstrap(Kademlia.java:111)
+        at org.peergos.protocol.dht.Kademlia.lambda$startBootstrapThread$2(Kadem
+lia.java:78)
+        at java.base/java.lang.Thread.run(Thread.java:1583)
