@@ -1,0 +1,250 @@
+Nov 01, 2023 6:41:30 AM peergos.server.storage.IpfsWrapper launch
+INFO: Using IPFS dir C:\Users\Administrator\.peergos\.ipfs
+Nov 01, 2023 6:41:30 AM peergos.server.storage.IpfsWrapper <init>
+INFO: Creating new identity
+Nov 01, 2023 6:41:30 AM peergos.server.storage.IpfsWrapper configure
+INFO: Initializing ipfs
+Nov 01, 2023 6:41:30 AM peergos.server.storage.IpfsWrapper launch
+INFO: Starting Nabu version: 0.6.0, peerid: 12D3KooWRysQTnW388tUKQeHbZ7yjXsEwsm783WFitVmDqXXi4Rq
+Nov 01, 2023 6:41:30 AM org.peergos.blockstore.FileBlockstore <init>
+INFO: Using FileBlockStore at location: C:\Users\Administrator\.peergos\.ipfs\blocks
+Nov 01, 2023 6:41:31 AM org.peergos.EmbeddedIpfs start
+INFO: Starting IPFS...
+Nov 01, 2023 6:41:31 AM org.peergos.EmbeddedIpfs start
+INFO: Node started and listening on [/ip6/::/tcp/4001/p2p/12D3KooWRysQTnW388tUKQeHbZ7yjXsEwsm783WFitVmDqXXi4Rq]
+Nov 01, 2023 6:41:31 AM org.peergos.EmbeddedIpfs start
+INFO: Bootstrapping IPFS routing table
+Nov 01, 2023 6:41:41 AM org.peergos.EmbeddedIpfs start
+INFO: Bootstrapping IPFS kademlia
+Nov 01, 2023 6:42:04 AM org.peergos.protocol.dht.Kademlia bootstrap
+INFO: Bootstrap connected to 15 nodes close to us.
+Nov 01, 2023 6:42:04 AM peergos.server.storage.IpfsWrapper launch
+INFO: Starting Nabu API server at 127.0.0.1:5001
+Nov 01, 2023 6:42:05 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled id query in: 36 mS
+Nov 01, 2023 6:42:05 AM peergos.shared.mutable.HttpMutablePointers <init>
+INFO: Creating proxying Http Mutable Pointers API at http://127.0.0.1:8080
+Nov 01, 2023 6:42:05 AM peergos.shared.storage.HttpSpaceUsage <init>
+INFO: Creating HTTP SpaceUsage API at http://127.0.0.1:8080 and http://127.0.0.1:8080
+Nov 01, 2023 6:42:05 AM peergos.shared.corenode.HTTPCoreNode <init>
+INFO: Creating HTTP Corenode API at http://127.0.0.1:8080
+Nov 01, 2023 6:42:05 AM peergos.server.corenode.MirrorCoreNode load
+INFO: Reading state from C:\Users\Administrator\.peergos\pki-state.cbor which exists ? true
+Nov 01, 2023 6:42:05 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 337 mS, response code http 200
+Nov 01, 2023 6:42:05 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 346mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 16 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 264 mS, response code http 200
+Nov 01, 2023 6:42:06 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 265mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:42:06 AM peergos.server.corenode.MirrorCoreNode update
+INFO: Updating pki mirror state... Please wait. This could take a minute or two
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 1 mS
+Nov 01, 2023 6:42:06 AM peergos.server.corenode.MirrorCoreNode update
+INFO: ... finished updating pki mirror state.
+Nov 01, 2023 6:42:06 AM peergos.server.corenode.MirrorCoreNode saveState
+INFO: Writing 2030401 bytes to C:\Users\Administrator\.peergos\pki-state.cbor
+Nov 01, 2023 6:42:06 AM peergos.server.Builder buildSpaceQuotas
+INFO: Using default user space quota of 1073741824
+Nov 01, 2023 6:42:06 AM peergos.server.space.SpaceCheckingKeyFilter update
+INFO: Checking for updated usage for users...
+Nov 01, 2023 6:42:06 AM peergos.server.space.SpaceCheckingKeyFilter update
+INFO: Checking for updated mutable pointers...
+Nov 01, 2023 6:42:06 AM peergos.server.space.SpaceCheckingKeyFilter update
+INFO: Checking for updates from user: timmyderselts, writer key: z59vuwzfFDot4YZHeiAPQPwC3ovupX74k2BommPNtHonNkHTNXDVc24
+Nov 01, 2023 6:42:06 AM peergos.server.space.SpaceCheckingKeyFilter update
+INFO: Checking for updates from user: timmyderselts, writer key: z59vuwzfFDoy5m3HHCJPfTHbpFKsULg4DQ4VjKYeRCB79zwmsPTuQ9g
+Nov 01, 2023 6:42:06 AM peergos.server.space.SpaceCheckingKeyFilter update
+INFO: 2023-11-01T06:42:06.561422900 Finished updating space usage for all usernames in 0 s
+Nov 01, 2023 6:42:06 AM peergos.shared.social.HttpSocialNetwork <init>
+INFO: Creating HTTP SocialNetwork API at http://127.0.0.1:8080 and http://127.0.0.1:8080
+Nov 01, 2023 6:42:06 AM peergos.server.UserService initAndStart
+INFO: Starting local Peergos server at: localhost:8000
+Nov 01, 2023 6:42:06 AM peergos.server.UserService initAndStart
+INFO: Using webroot from jar
+Nov 01, 2023 6:42:06 AM peergos.server.UserService initAndStart
+INFO: Caching web-resources
+Nov 01, 2023 6:42:06 AM peergos.server.UserService initAndStart
+INFO: Starting local Peergos server at: localhost:8003
+Nov 01, 2023 6:42:06 AM peergos.server.UserService initAndStart
+INFO: Using webroot from jar
+Nov 01, 2023 6:42:06 AM peergos.server.UserService initAndStart
+INFO: Caching web-resources
+Nov 01, 2023 6:42:06 AM peergos.server.space.SpaceCheckingKeyFilter calculateUsage
+INFO: Calculating space usage for 1 local users...
+Nov 01, 2023 6:42:06 AM peergos.server.space.SpaceCheckingKeyFilter calculateUsage
+INFO: Calculating space usage of timmyderselts (0/1)
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/has query in: 1 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 1 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/has query in: 1 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 1 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/has query in: 1 mS
+Nov 01, 2023 6:42:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 1 mS
+Nov 01, 2023 6:42:06 AM peergos.server.space.SpaceCheckingKeyFilter calculateUsage
+INFO: Finished calculating space usage for 1 local users...
+Nov 01, 2023 6:42:28 AM org.peergos.protocol.dht.Kademlia bootstrap
+INFO: Bootstrap connected to 15 nodes close to us.
+Nov 01, 2023 6:43:06 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 263 mS, response code http 200
+Nov 01, 2023 6:43:06 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 267mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:43:06 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:43:07 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 251 mS, response code http 200
+Nov 01, 2023 6:43:07 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 253mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:44:07 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 260 mS, response code http 200
+Nov 01, 2023 6:44:07 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 264mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:44:07 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 1 mS
+Nov 01, 2023 6:44:07 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 261 mS, response code http 200
+Nov 01, 2023 6:44:07 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 263mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:45:07 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 258 mS, response code http 200
+Nov 01, 2023 6:45:07 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 262mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:45:07 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:45:08 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 260 mS, response code http 200
+Nov 01, 2023 6:45:08 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 262mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:46:08 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 258 mS, response code http 200
+Nov 01, 2023 6:46:08 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 262mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:46:08 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:46:08 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 262 mS, response code http 200
+Nov 01, 2023 6:46:08 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 263mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:47:09 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 255 mS, response code http 200
+Nov 01, 2023 6:47:09 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 259mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:47:09 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:47:09 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 257 mS, response code http 200
+Nov 01, 2023 6:47:09 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 258mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:47:51 AM org.peergos.protocol.dht.Kademlia bootstrap
+INFO: Bootstrap connected to 16 nodes close to us.
+Nov 01, 2023 6:48:09 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 262 mS, response code http 200
+Nov 01, 2023 6:48:09 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 265mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:48:09 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:48:09 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 266 mS, response code http 200
+Nov 01, 2023 6:48:09 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 267mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:49:10 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 256 mS, response code http 200
+Nov 01, 2023 6:49:10 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 260mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:49:10 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:49:10 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 259 mS, response code http 200
+Nov 01, 2023 6:49:10 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 261mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:50:10 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 260 mS, response code http 200
+Nov 01, 2023 6:50:10 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 264mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:50:10 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:50:10 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 256 mS, response code http 200
+Nov 01, 2023 6:50:10 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 259mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:51:11 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 258 mS, response code http 200
+Nov 01, 2023 6:51:11 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 261mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:51:11 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:51:11 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 258 mS, response code http 200
+Nov 01, 2023 6:51:11 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 261mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:52:11 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 259 mS, response code http 200
+Nov 01, 2023 6:52:11 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 262mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:52:11 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:52:12 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 277 mS, response code http 200
+Nov 01, 2023 6:52:12 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 279mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:53:12 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 259 mS, response code http 200
+Nov 01, 2023 6:53:12 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 263mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:53:12 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:53:12 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 265 mS, response code http 200
+Nov 01, 2023 6:53:12 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 266mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:53:14 AM org.peergos.protocol.dht.Kademlia bootstrap
+INFO: Bootstrap connected to 15 nodes close to us.
+Nov 01, 2023 6:54:12 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 264 mS, response code http 200
+Nov 01, 2023 6:54:12 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 268mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:54:12 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:54:13 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 257 mS, response code http 200
+Nov 01, 2023 6:54:13 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 259mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:55:13 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 261 mS, response code http 200
+Nov 01, 2023 6:55:13 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 264mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:55:13 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:55:13 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 261 mS, response code http 200
+Nov 01, 2023 6:55:13 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 263mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
+Nov 01, 2023 6:56:14 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 258 mS, response code http 200
+Nov 01, 2023 6:56:14 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 262mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi)
+Nov 01, 2023 6:56:14 AM org.peergos.net.APIHandler handleCallToAPI
+INFO: API Handler handled block/get query in: 2 mS
+Nov 01, 2023 6:56:14 AM org.peergos.net.HttpProxyHandler handleCallToAPI
+INFO: P2P HTTP proxy handled QmVdFZgHnEgcedCS2G2ZNiEN59LuVrnRm7z3yXtEBv2XiF/http/peergos/v0/mutable/getPointer query in: 275 mS, response code http 200
+Nov 01, 2023 6:56:14 AM peergos.shared.mutable.HttpMutablePointers getPointer
+INFO: HttpMutablePointers.get took 277mS for (z59vuwzfFDp3ZA8ZpnnmHEuMtyA1q34m3Th49DYXQVJntWpxdGrRqXi, z59vuwzfFDonudWvdN2NsTXXfr3Es5BDetfdWowqeXPPCBxyFbqQij9)
